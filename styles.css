@@ -134,3 +134,139 @@ body {
         font-size: 16px;
     }
 }
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    text-align: center;
+    font-size: 20px;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#scanner-container, #generator-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+#qr-reader {
+    width: 50%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#qrcode {
+    margin-top: 20px;
+}
+
+#text-input{
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #fffefe;
+    border: 2px solid #f99bb7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-input::placeholder{
+    font-size: 15px;
+    color: #fffefe;
+}
+
+#generate-btn, #text-input, #download-btn {
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    color: white;
+    display: block;
+    height: 30px;
+    font-size: 1.0em;
+    font-weight: 600;
+    padding: 1px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+    border: none; 
+    cursor: pointer; 
+}
+
+#generate-btn:hover, #download-btn:hover {
+    color: #fff;
+}
+
+#generate-btn .btn-span, #download-btn {
+    align-items: center;
+    background: #e4a1a1;
+    margin-left: 0%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease-out;
+    width: 100%;
+}
+
+#generate-btn:hover .btn-span, #download-btn:hover {
+    background: transparent;
+}
+
+#text-input {
+    height: 30px; 
+    font-size: 1em; 
+    padding: 4px;
+    border-radius: 6px;
+    border: 2px solid #ffffff;
+    width: 500px; 
+    color: white;
+}
+
+#download-btn{
+    width: 150px;
+}
+
+#download-btn:disabled {
+    background-color: transparent; 
+    color: black; 
+}
+
+#download-btn:disabled .btn-span {
+    background: transparent; 
+}
+
+#app {
+    display: flex;
+    height: 100%;
+}
+
+#qrcode {
+    text-align: center;
+    align-items: center;
+    margin: auto; /* Center the container horizontally */
+    margin-top: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
