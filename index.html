@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300&display=swap" rel="stylesheet">
+    <title>QR scanner and generator</title>
+</head>
+<body>
+    <div id="qr">
+        <div id="container" class="container">
+            <div class="half-size half-size-1"></div>
+            <div id="center" class="center">
+                <div id="center_container">
+                    <h2 class="qr_scanner">QR scanner</h2>
+                    <video id="scanner-video" width="100%"></video>
+                    <p id="result"></p>
+                </div>
+
+                <div id="generator_container" class="generator-container">
+                    <h2>QR generator</h2>
+                    <input type="text" id="text-input" placeholder="Enter your data">
+                    <button id="generate-btn"><span class="btn-span">Generate QR</span></button>
+                    <div id="qrcode"></div>
+                    <button id="download-btn" disabled>
+                        <span class="btn-span">Download QR</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="half-size half-size-2" style="background-color: rgb(230, 131, 158);"></div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</body>
+</html>
