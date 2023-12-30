@@ -124,7 +124,7 @@ body {
 #qrcode {
     text-align: center;
     align-items: center;
-    margin: auto; /* Center the container horizontally */
+    margin: auto; 
     margin-top: 10px;
 
 }
