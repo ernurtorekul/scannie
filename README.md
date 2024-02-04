@@ -1,1 +1,1 @@
-# qr_scanner
+# qr_scannie
