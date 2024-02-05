@@ -239,6 +239,8 @@ body {
     color: white;
 }
 
+
+
 #download-btn{
     width: 150px;
 }
@@ -260,7 +262,7 @@ body {
 #qrcode {
     text-align: center;
     align-items: center;
-    margin: auto; /* Center the container horizontally */
+    margin: auto; 
     margin-top: 10px;
 
 }
